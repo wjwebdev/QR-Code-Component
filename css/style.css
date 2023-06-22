@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Outfit:wght@400;700&display=swap');
+/*CSS RESET ACROSS ALL BROWSERS*/
+*{
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+}
+
+/*CSS Variables*/ 
+:root {
+    --primary-color: #D5E1EF;
+    --secondary-color: #fff; 
+    --paragraph-size: 15px; 
+    --dark-blue: hsl(218, 44%, 22%); 
+    --grayish-blue: hsl(220, 15%, 55%); 
+}
+
+.container {
+    max-width: 1440px;  
+    margin: 0 auto; 
+}
+
+body {
+    background-color: var(--primary-color); 
+    height: 100vh; 
+    font-family: 'Outfit', sans-serif;
+}
+
+.qr-box {
+    background-color: var(--secondary-color);
+    height: 483px;
+    max-width: 313px;
+    border-radius: 22px;
+    margin: 0 auto;
+    position: relative;
+    top: 225px;
+    transition: transform 250ms;
+}
+
+ .qr-box:hover {
+  transform: translateY(-10px);
+}
+
+#qr-code-img {
+    position: relative;
+    top: 17px;
+    left: 18px;
+    border-radius: 7px;
+    width: 277px;
+}
+
+.description {
+    padding: 10px; 
+}
+
+h2 {
+    text-align: center;
+    margin-top: 23px;
+    color: var(--dark-blue); 
+}
+
+p {
+    font-size: var(--paragraph-size);
+    text-align: center;
+    color: var(--grayish-blue); 
+    padding: 10px;  
+    margin-top: 7px; 
+}
